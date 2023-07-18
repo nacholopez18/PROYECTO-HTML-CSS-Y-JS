@@ -4,9 +4,159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href=".//css/styles.css" />
   </head>
   <body>
+    <div class="container">
+      <nav class="navbar bg-body-tertiary navbar-expand-lg">
+        <div class="container-fluid">
+          <img src=".//Materiales/flex-ui-green-light.svg" alt="" />
+          <div
+            class="collapse navbar-collapse d-flex justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Producto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Características</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Precios</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn" type="submit">Ingresar</button>
+          <button class="btn btn-success" type="submit">Registrarse</button>
+        </div>
+      </nav>
+      <header>
+        <div class="p-5 d-flex flex-wrap">
+          <div class="col-xl-6 col-12">
+            <div>NUEVO</div>
+            <h1>La plataforma para las empresas del futuro</h1>
+            <p>Productos pensados para los negocios del próximo siglo</p>
+            <button class="btn btn-success" type="submit">
+              Solicitar demo
+            </button>
+            <button class="btn btn-outline-dark" type="submit">
+              Registrarse
+            </button>
+          </div>
+          <div class="col-xl-6 col-12 position-relative">
+            <img
+              src="./Materiales/circle3-yellow.svg"
+              alt=""
+              class="position-absolute"
+            />
+            <img src=".//Materiales/header.jpg" alt="" />
+            <img
+              src="./Materiales/dots3-blue.svg"
+              alt=""
+              class="position-absolute bottom-0 end-0 start-70"
+            />
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="card-group d-flex justify-content-around">
+          <div class="cardOne align-items-center">
+            <img
+              src="./Materiales/mail-icon.svg"
+              class="card-img-one bg-success p-3 rounded"
+              alt="..."
+            />
+            <div class="card-body-one">
+              <h5 class="card-title-one">Mide tu performance</h5>
+              <p class="card-text-one">
+                Asistencia y capacitación de porimer nivel.
+              </p>
+            </div>
+          </div>
+          <div class="cardTwo">
+            <img
+              src="./Materiales/analytics-icon.svg"
+              class="card-img-two bg-success p-3 rounded"
+              alt="..."
+            />
+            <div class="card-body-two">
+              <h5 class="card-title-two">Analíticas claras</h5>
+              <p class="card-text-two">
+                Disfruta de un dashboard de analíticas claras y accionables.
+              </p>
+            </div>
+          </div>
+          <div class="cardThree">
+            <img
+              src="./Materiales/people-icon.svg"
+              class="card-img-three bg-success p-3 rounded"
+              alt="..."
+            />
+            <div class="card-body-three">
+              <h5 class="card-title-three">Soluciones para el equipo</h5>
+              <p class="card-text-three">
+                Facilita el accionar de tu empresa con nuestra suite de
+                herramientas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="bg-body-tertiary rounded">
+              <p>PRECIO</p>
+              <h5 class="card-title">Plan básico</h5>
+              <p>$ 10/mes</p>
+              <p>Facturado anualmente</p>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <button></button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-body-tertiary rounded">
+              <p>PRECIO</p>
+              <h5 class="card-title">Plan básico</h5>
+              <p>$ 10/mes</p>
+              <p>Facturado anualmente</p>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <button></button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-body-tertiary rounded">
+              <p>PRECIO</p>
+              <h5 class="card-title">Plan básico</h5>
+              <p>$ 10/mes</p>
+              <p>Facturado anualmente</p>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <button></button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src=".//JS/main.js"></script>
   </body>
 </html>
