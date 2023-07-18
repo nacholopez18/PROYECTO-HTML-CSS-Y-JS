@@ -66,8 +66,8 @@
         </div>
       </header>
       <main>
-        <div class="card-group d-flex justify-content-around">
-          <div class="cardOne align-items-center">
+        <div class="card-group d-flex row row-cols-1 row-cols-md-3 g-4">
+          <div class="cardOne align-content-center">
             <img
               src="./Materiales/mail-icon.svg"
               class="card-img-one bg-success p-3 rounded"
@@ -111,51 +111,106 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="bg-body-tertiary rounded">
-              <p>PRECIO</p>
-              <h5 class="card-title">Plan básico</h5>
-              <p>$ 10/mes</p>
-              <p>Facturado anualmente</p>
+              <p class="text-center">PRECIO</p>
+              <h5 class="card-title text-center">Plan básico</h5>
+              <p class="text-center">$ 10/mes</p>
+              <p class="text-center">Facturado anualmente</p>
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="list-group-item">1Gb de almacenamiento</li>
+                <li class="list-group-item">Dashboard completo</li>
+                <li class="list-group-item">Asistencia por correo</li>
+                <li class="list-group-item">Hasta 10 miembros</li>
               </ul>
-              <button></button>
+              <button class="btn btn-success ms-5" type="submit">
+                Solicitar demo
+              </button>
             </div>
           </div>
           <div class="col">
             <div class="bg-body-tertiary rounded">
-              <p>PRECIO</p>
-              <h5 class="card-title">Plan básico</h5>
-              <p>$ 10/mes</p>
-              <p>Facturado anualmente</p>
+              <p class="text-center">PRECIO</p>
+              <h5 class="card-title text-center">Plan freelancer</h5>
+              <p class="text-center">$ 99/mes</p>
+              <p class="text-center">Facturado anualmente</p>
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="list-group-item">Características básicas</li>
+                <li class="list-group-item">Asistencia preferencial</li>
+                <li class="list-group-item">100GB de almacenamiento</li>
+                <li class="list-group-item">Hasta 100 miembros</li>
               </ul>
-              <button></button>
+              <button class="btn btn-success ms-5" type="submit">
+                Solicitar demo
+              </button>
             </div>
           </div>
           <div class="col">
             <div class="bg-body-tertiary rounded">
-              <p>PRECIO</p>
-              <h5 class="card-title">Plan básico</h5>
-              <p>$ 10/mes</p>
-              <p>Facturado anualmente</p>
+              <p class="text-center">PRECIO</p>
+              <h5 class="card-title text-center">Plan empresas</h5>
+              <p class="text-center">$ 799/mes</p>
+              <p class="text-center">Facturado anualmente</p>
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="list-group-item">Características freelancer</li>
+                <li class="list-group-item">1TB de almacenamiento</li>
+                <li class="list-group-item">Asistencia telefónica 24/7</li>
+                <li class="list-group-item">Miembros ilimitados</li>
               </ul>
-              <button></button>
+              <button class="btn btn-success ms-5" type="submit">
+                Solicitar demo
+              </button>
             </div>
           </div>
         </div>
       </main>
+
+      <footer class="footer d-flex align-items-center mt-5" id="customFooter">
+        <div class="container">
+          <div class="d-flex justify-content-center mt-2">
+            <img
+              src="./Materiales/logo-verde.png"
+              alt=""
+              class="img-fluid"
+              id="greenOctopus"
+            />
+            <span style="color: whitesmoke" class="ms-2">Flex</span>
+          </div>
+          <nav class="navbar navbar-expand-lg mt-4">
+            <div class="container-fluid">
+              <div
+                class="collapse navbar-collapse d-flex justify-content-center"
+                id="navbarNavDropdown"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item footer-item">
+                    <a class="nav-link" aria-current="page" href="#"
+                      >Producto</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Funcionalidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Precios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Correos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ayuda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Privacidad</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <hr />
+        </div>
+      </footer>
     </div>
     <script src=".//JS/main.js"></script>
   </body>
