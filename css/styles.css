@@ -1,8 +1,18 @@
 #customFooter {
-  min-height: 200px;
+  min-height: 210px;
   background-color: #2a3342;
 }
 
 #greenOctopus {
-  width: 25px;
+  width: 20px;
+  height: 15px;
+}
+
+.footer .navbar-nav .nav-item .nav-link {
+  color: #93a1b6;
+  margin: 10px;
+}
+
+#logoOctopus{
+  width: 70px;
 }
