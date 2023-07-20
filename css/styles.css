@@ -16,3 +16,14 @@
 #logoOctopus{
   width: 70px;
 }
+.bgGreen {
+  color: white;
+  background-color: #2ad167;
+  border-radius: 0.5rem;
+  border: none;
+  width: fit-content;
+}
+
+.whitePhoto {
+  -webkit-filter: invert(1);
+}

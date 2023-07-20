@@ -13,43 +13,41 @@
     <link rel="stylesheet" href=".//css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar bg-body-tertiary navbar-expand-lg">
-        <div class="container-fluid">
-          <img
-            src="./Materiales/logo-senpai-verde-negro.svg"
-            alt=""
-            id="logoOctopus"
-          />
-          <div
-            class="collapse navbar-collapse d-flex justify-content-center"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Producto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Características</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Precios</a>
-              </li>
-            </ul>
-          </div>
-          <button class="btn" type="submit">Ingresar</button>
-          <button class="btn btn-success" type="submit">Registrarse</button>
+    <nav class="navbar bg-body-tertiary navbar-expand-lg">
+      <div class="container-fluid">
+        <img
+          src="./Materiales/logo-senpai-verde-negro.svg"
+          alt=""
+          id="logoOctopus"
+        />
+        <div
+          class="collapse navbar-collapse d-flex justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Producto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Características</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Precios</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+        <button class="btn" type="submit">Ingresar</button>
+        <button class="bgGreen" type="submit">Registrarse</button>
+      </div>
+    </nav>
+    <div class="container">
       <header>
         <div class="p-5 d-flex flex-wrap">
           <div class="col-xl-6 col-12">
-            <div>NUEVO</div>
+            <span class="bgGreen rounded p-1">NUEVO</span>
             <h2>La plataforma para las empresas del futuro</h2>
             <p>Productos pensados para los negocios del próximo siglo</p>
-            <button class="btn btn-success" type="submit">
-              Solicitar demo
-            </button>
+            <button class="btn bgGreen" type="submit">Solicitar demo</button>
             <button class="btn btn-outline-dark" type="submit">
               Registrarse
             </button>
@@ -72,11 +70,13 @@
       <main>
         <div class="card-group d-flex row row-cols-1 row-cols-md-3 g-4">
           <div class="cardOne align-content-center">
-            <img
-              src="./Materiales/mail-icon.svg"
-              class="card-img-one bg-success p-3 rounded mx-auto d-block"
-              alt="..."
-            />
+            <div class="bgGreen">
+              <img
+                src="./Materiales/mail-icon.svg"
+                class="card-img-one p-3 rounded whitePhoto"
+                alt="..."
+              />
+            </div>
             <div class="card-body-one">
               <h5 class="card-title-one text-center py-3">
                 Mide tu performance
@@ -87,11 +87,13 @@
             </div>
           </div>
           <div class="cardTwo">
-            <img
-              src="./Materiales/analytics-icon.svg"
-              class="card-img-two bg-success p-3 rounded mx-auto d-block"
-              alt="..."
-            />
+            <div class="bgGreen">
+              <img
+                src="./Materiales/analytics-icon.svg"
+                class="card-img-two p-3 rounded whitePhoto"
+                alt="..."
+              />
+            </div>
             <div class="card-body-two">
               <h5 class="card-title-two text-center py-3">Analíticas claras</h5>
               <p class="card-text-two text-center">
@@ -100,11 +102,13 @@
             </div>
           </div>
           <div class="cardThree">
-            <img
-              src="./Materiales/people-icon.svg"
-              class="card-img-three bg-success p-3 rounded mx-auto d-block"
-              alt="..."
-            />
+            <div class="bgGreen">
+              <img
+                src="./Materiales/people-icon.svg"
+                class="card-img-three p-3 rounded whitePhoto"
+                alt="..."
+              />
+            </div>
             <div class="card-body-three">
               <h5 class="card-title-three text-center py-3">
                 Soluciones para el equipo
@@ -142,7 +146,7 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     /></svg
                   ><span class="px-3">1Gb de almacenamiento</span>
                 </li>
@@ -157,7 +161,7 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     /></svg
                   ><span class="px-3">Dashboard completo</span>
                 </li>
@@ -172,7 +176,7 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     /></svg
                   ><span class="px-3">Asistencia por correo</span>
                 </li>
@@ -187,12 +191,12 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     /></svg
                   ><span class="px-3">Hasta 10 miembros</span>
                 </li>
               </ul>
-              <button class="btn btn-success w-100" type="submit">
+              <button class="btn bgGreen w-100" type="submit">
                 Solicitar demo
               </button>
             </div>
@@ -215,7 +219,7 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     />
                   </svg>
                   <span class="px-3">Características básicas</span>
@@ -231,7 +235,7 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     />
                   </svg>
                   <span class="px-3">Asistencia preferencial</span>
@@ -247,7 +251,7 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     />
                   </svg>
                   <span class="px-3">100GB de almacenamiento</span>
@@ -263,13 +267,13 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     />
                   </svg>
                   <span class="px-3">Hasta 100 miembros</span>
                 </li>
               </ul>
-              <button class="btn btn-success w-100" type="submit">
+              <button class="btn bgGreen w-100" type="submit">
                 Solicitar demo
               </button>
             </div>
@@ -292,7 +296,7 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     />
                   </svg>
                   <span class="px-3">Características freelancer</span>
@@ -308,7 +312,7 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     />
                   </svg>
                   <span class="px-3">1TB de almacenamiento</span>
@@ -324,7 +328,7 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     />
                   </svg>
                   <span class="px-3">Asistencia telefónica 24/7</span>
@@ -340,86 +344,84 @@
                   >
                     <path
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      class="text-success me-5"
+                      style="color: #2ad167"
                     />
                   </svg>
                   <span class="px-3">Miembros ilimitados</span>
                 </li>
               </ul>
-              <button class="btn btn-success w-100" type="submit">
+              <button class="btn bgGreen w-100" type="submit">
                 Solicitar demo
               </button>
             </div>
           </div>
         </div>
       </main>
-
-      <footer class="footer d-flex align-items-center mt-1" id="customFooter">
-        <div class="container">
-          <div class="d-flex justify-content-center align-items-center mt-5">
-            <img
-              src="./Materiales/logo-verde.png"
-              alt=""
-              class="img-fluid"
-              id="greenOctopus"
-            />
-            <span style="color: #f9fbfd" class="ms-1 fs-6"><b>Flex</b></span>
-          </div>
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <div
-                class="collapse navbar-collapse d-flex justify-content-center"
-                id="navbarNavDropdown"
-              >
-                <ul class="navbar-nav">
-                  <li class="nav-item footer-item">
-                    <a class="nav-link" aria-current="page" href="#"
-                      >Producto</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Funcionalidades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Precios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Recursos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Correos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Ayuda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Privacidad</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <hr style="color: #93a1b652" class="w-60 mt-0" />
-          <div class="text-center" style="margin: 20px 0 30px 0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="10"
-              height="10"
-              fill="#93a1b6"
-              class="bi bi-c-circle"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
-              />
-            </svg>
-            <span style="color: #93a1b6"
-              >2022 Flex. Un producto ficticio de Senpai.</span
-            >
-          </div>
-        </div>
-      </footer>
     </div>
+
+    <footer class="footer d-flex align-items-center mt-1" id="customFooter">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center mt-5">
+          <img
+            src="./Materiales/logo-verde.png"
+            alt=""
+            class="img-fluid"
+            id="greenOctopus"
+          />
+          <span style="color: #f9fbfd" class="ms-1 fs-6"><b>Flex</b></span>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div
+              class="collapse navbar-collapse d-flex justify-content-center"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item footer-item">
+                  <a class="nav-link" aria-current="page" href="#">Producto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Funcionalidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Recursos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Correos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ayuda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Privacidad</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <hr style="color: #93a1b652" class="w-60 mt-0" />
+        <div class="text-center" style="margin: 20px 0 30px 0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="10"
+            fill="#93a1b6"
+            class="bi bi-c-circle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
+            />
+          </svg>
+          <span style="color: #93a1b6"
+            >2022 Flex. Un producto ficticio de Senpai.</span
+          >
+        </div>
+      </div>
+    </footer>
     <script src=".//JS/main.js"></script>
   </body>
 </html>
