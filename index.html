@@ -25,27 +25,27 @@
           id="navbarNavDropdown"
         >
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" aria-current="page" href="#">Producto</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#">Características</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#">Precios</a>
             </li>
           </ul>
         </div>
         <button class="btn" type="submit">Ingresar</button>
-        <button class="bgGreen" type="submit">Registrarse</button>
+        <button class="btn bgGreen" type="submit">Registrarse</button>
       </div>
     </nav>
     <div class="container">
-      <header>
-        <div class="p-5 d-flex flex-wrap">
-          <div class="col-xl-6 col-12">
+      <header class="mb-5">
+        <div class="py-5 d-flex flex-wrap" id="Presentation">
+          <div class="col-xl-6 col-12 pt-5">
             <span class="bgGreen rounded p-1">NUEVO</span>
-            <h2>La plataforma para las empresas del futuro</h2>
+            <h1 id="titleHeader">La plataforma para las empresas del futuro</h1>
             <p>Productos pensados para los negocios del próximo siglo</p>
             <button class="btn bgGreen" type="submit">Solicitar demo</button>
             <button class="btn btn-outline-dark" type="submit">
@@ -54,15 +54,22 @@
           </div>
           <div class="col-xl-6 col-12 position-relative">
             <img
+              src=".//Materiales/header.jpg"
+              alt=""
+              class="position-absolute end-0"
+              id="oficiePhoto"
+            />
+            <img
               src="./Materiales/circle3-yellow.svg"
               alt=""
               class="position-absolute"
+              id="sunPhoto"
             />
-            <img src=".//Materiales/header.jpg" alt="" />
             <img
               src="./Materiales/dots3-blue.svg"
               alt=""
-              class="position-absolute bottom-0 end-0 start-70"
+              class="position-absolute"
+              id="blueSpotPhoto"
             />
           </div>
         </div>
@@ -78,7 +85,7 @@
               />
             </div>
             <div class="card-body-one">
-              <h5 class="card-title-one text-center py-3">
+              <h5 class="card-title-one text-center py-3 fw-bold">
                 Mide tu performance
               </h5>
               <p class="card-text-one text-center">
@@ -95,7 +102,9 @@
               />
             </div>
             <div class="card-body-two">
-              <h5 class="card-title-two text-center py-3">Analíticas claras</h5>
+              <h5 class="card-title-two text-center py-3 fw-bold">
+                Analíticas claras
+              </h5>
               <p class="card-text-two text-center">
                 Disfruta de un dashboard de analíticas claras y accionables.
               </p>
@@ -110,7 +119,7 @@
               />
             </div>
             <div class="card-body-three">
-              <h5 class="card-title-three text-center py-3">
+              <h5 class="card-title-three text-center py-3 fw-bold">
                 Soluciones para el equipo
               </h5>
               <p class="card-text-three text-center">
@@ -121,8 +130,10 @@
           </div>
         </div>
         <div>
-          <h2 class="pb-3">Precios flexibles que escalan contigo.</h2>
-          <p class="pb-3">
+          <h2 class="pb-3 mt-5" id="secondTitle">
+            Precios flexibles que escalan contigo.
+          </h2>
+          <p class="pb-3 mb-4">
             Nuestra facturación se ajusta al tamaño de tu empresa. Tiempo de
             prueba de 7 días en todos nuestros planes.
           </p>
@@ -130,9 +141,12 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="bg-body-tertiary rounded p-5">
-              <p class="text-center">PRECIO</p>
-              <h5 class="card-title text-center">Plan básico</h5>
-              <p class="text-center">$ 10/mes</p>
+              <p class="text-center colorText">PRECIO</p>
+              <h5 class="card-title text-center colorText">Plan básico</h5>
+              <p class="text-center">
+                $ <span class="fw-semibold fs-2">10 </span>
+                <span class="fs-4">/ mes</span>
+              </p>
               <p class="text-center">Facturado anualmente</p>
               <ul class="p-0">
                 <li class="list-group-item pb-3">
@@ -203,9 +217,12 @@
           </div>
           <div class="col">
             <div class="bg-body-tertiary rounded p-5">
-              <p class="text-center">PRECIO</p>
-              <h5 class="card-title text-center">Plan freelancer</h5>
-              <p class="text-center">$ 99/mes</p>
+              <p class="text-center colorText">PRECIO</p>
+              <h5 class="card-title text-center colorText">Plan freelancer</h5>
+              <p class="text-center">
+                $ <span class="fw-semibold fs-2">99 </span>
+                <span class="fs-4">/ mes</span>
+              </p>
               <p class="text-center">Facturado anualmente</p>
               <ul class="p-0">
                 <li class="list-group-item pb-3">
@@ -280,9 +297,12 @@
           </div>
           <div class="col">
             <div class="bg-body-tertiary rounded p-5">
-              <p class="text-center">PRECIO</p>
-              <h5 class="card-title text-center">Plan empresas</h5>
-              <p class="text-center">$ 799/mes</p>
+              <p class="text-center colorText">PRECIO</p>
+              <h5 class="card-title text-center colorText">Plan empresas</h5>
+              <p class="text-center">
+                $ <span class="fw-semibold fs-2">799 </span>
+                <span class="fs-4">/ mes</span>
+              </p>
               <p class="text-center">Facturado anualmente</p>
               <ul class="p-0">
                 <li class="list-group-item pb-3">
@@ -359,7 +379,7 @@
       </main>
     </div>
 
-    <footer class="footer d-flex align-items-center mt-1" id="customFooter">
+    <footer class="footer d-flex align-items-center mt-5" id="customFooter">
       <div class="container">
         <div class="d-flex justify-content-center align-items-center mt-5">
           <img

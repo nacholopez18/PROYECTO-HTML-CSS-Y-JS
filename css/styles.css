@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@800&display=swap");
+
 #customFooter {
   min-height: 210px;
   background-color: #2a3342;
@@ -13,7 +15,7 @@
   margin: 10px;
 }
 
-#logoOctopus{
+#logoOctopus {
   width: 70px;
 }
 .bgGreen {
@@ -26,4 +28,29 @@
 
 .whitePhoto {
   -webkit-filter: invert(1);
+}
+#titleHeader {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 4rem;
+}
+#oficiePhoto {
+  top: 40px;
+}
+#sunPhoto {
+  left: 20px;
+}
+
+#blueSpotPhoto {
+  right: -3rem;
+  top: 450px;
+}
+#Presentation {
+  height: 600px;
+}
+#secondTitle {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 2.5rem;
+}
+.colorText {
+  color: #2ad167;
 }
