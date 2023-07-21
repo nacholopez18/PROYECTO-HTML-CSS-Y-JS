@@ -37,7 +37,9 @@
           </ul>
         </div>
         <button class="btn" type="submit">Ingresar</button>
-        <button class="btn bgGreen" type="submit">Registrarse</button>
+        <button class="btn bgGreen" id="btnRegister" type="submit">
+          Registrarse
+        </button>
       </div>
     </nav>
     <div class="container">
@@ -72,6 +74,62 @@
               id="blueSpotPhoto"
             />
           </div>
+        </div>
+        <div class="container modalForm" id="formContainer">
+          <form class="d-flex flex-wrap justify-content-center">
+            <div class="pt-5">
+              <div class="mb-3">
+                <img
+                  src="./Materiales/logo-blanco.png"
+                  alt=""
+                  class="bgGreen modalOctopus p-2 align-items-center"
+                />
+                <p class="modalColor">
+                  Ingresa a tu cuenta y empieza a conseguir resultados
+                </p>
+                <label for="exampleInputEmail1" class="form-label modalColor"
+                  >Correo</label
+                >
+                <input
+                  type="email"
+                  class="form-control w-100"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label modalColor"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control w-100"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check justify-content-around">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label modalColor" for="exampleCheck1"
+                  >Recordame</label
+                >
+                <span style="color: #2ad167">Olvidé mi contraseña</span>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary w-100 modalColor buttonFormModal"
+              >
+                Ingresar
+              </button>
+              <p class="modalColor text-center">
+                Aún no tienes cuenta?
+                <span style="color: #2ad167">Registrarse</span>
+              </p>
+            </div>
+          </form>
         </div>
       </header>
       <main>

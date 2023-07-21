@@ -54,3 +54,17 @@
 .colorText {
   color: #2ad167;
 }
+.modalForm{
+  display: none;
+  background-color: #2a3342;
+  position: absolute;
+  top: 100px;
+  height: 500px;
+  width: 1400px;
+}
+.modalOctopus{
+  width: 50px;
+}
+.modalColor{
+  color: white;
+}
