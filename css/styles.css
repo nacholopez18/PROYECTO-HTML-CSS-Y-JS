@@ -54,17 +54,34 @@
 .colorText {
   color: #2ad167;
 }
-.modalForm{
+.modalForm {
   display: none;
   background-color: #2a3342;
-  position: absolute;
-  top: 100px;
-  height: 500px;
-  width: 1400px;
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
-.modalOctopus{
+.modalOctopus {
   width: 50px;
+  margin-left: 43%;
+  margin-bottom: 15px;
 }
-.modalColor{
+.modalColor {
   color: white;
+}
+.modalPhrase {
+  color: #93a1b6;
+  margin-left: 50px;
+}
+.buttonFormModal:hover {
+  background-color: white;
+  color: #2ad167;
+}
+.close {
+  float: right;
+  font-size: 3.5rem;
+  color: white;
+  padding-right: 20px;
 }

@@ -13,6 +13,69 @@
     <link rel="stylesheet" href=".//css/styles.css" />
   </head>
   <body>
+    <div class="modalForm" id="formContainer">
+      <span class="close">&times;</span>
+      <form
+        class="d-flex flex-wrap justify-content-center h-100 align-items-center"
+      >
+        <div class="pt-5">
+          <div class="mb-3">
+            <img
+              src="./Materiales/logo-blanco.png"
+              alt=""
+              class="bgGreen modalOctopus py-2 px-1 align-items-center"
+            />
+          </div>
+          <div class="mb-3">
+            <h1 class="modalColor">Ingresa a tu cuenta</h1>
+            <p class="modalPhrase">y empieza a conseguir resultados</p>
+
+            <label for="exampleInputEmail1" class="form-label modalColor"
+              >Correo</label
+            >
+            <input
+              type="email"
+              class="form-control w-100"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label modalColor"
+              >Contraseña</label
+            >
+            <input
+              type="password"
+              class="form-control w-100"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div class="mb-3 form-check d-flex justify-content-between">
+            <span>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label modalColor" for="exampleCheck1"
+                >Recordame</label
+              >
+            </span>
+            <span style="color: #2ad167">Olvidé mi contraseña</span>
+          </div>
+          <button
+            type="submit"
+            class="btn w-100 modalColor buttonFormModal bgGreen mb-3"
+          >
+            Ingresar
+          </button>
+          <p class="modalColor text-center">
+            Aún no tienes cuenta?
+            <span style="color: #2ad167">Registrarse</span>
+          </p>
+        </div>
+      </form>
+    </div>
     <nav class="navbar bg-body-tertiary navbar-expand-lg">
       <div class="container-fluid">
         <img
@@ -36,10 +99,8 @@
             </li>
           </ul>
         </div>
-        <button class="btn" type="submit">Ingresar</button>
-        <button class="btn bgGreen" id="btnRegister" type="submit">
-          Registrarse
-        </button>
+        <button class="btn" type="submit" id="btnLogin">Ingresar</button>
+        <button class="btn bgGreen" type="submit">Registrarse</button>
       </div>
     </nav>
     <div class="container">
@@ -75,66 +136,10 @@
             />
           </div>
         </div>
-        <div class="container modalForm" id="formContainer">
-          <form class="d-flex flex-wrap justify-content-center">
-            <div class="pt-5">
-              <div class="mb-3">
-                <img
-                  src="./Materiales/logo-blanco.png"
-                  alt=""
-                  class="bgGreen modalOctopus p-2 align-items-center"
-                />
-                <p class="modalColor">
-                  Ingresa a tu cuenta y empieza a conseguir resultados
-                </p>
-                <label for="exampleInputEmail1" class="form-label modalColor"
-                  >Correo</label
-                >
-                <input
-                  type="email"
-                  class="form-control w-100"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label modalColor"
-                  >Contraseña</label
-                >
-                <input
-                  type="password"
-                  class="form-control w-100"
-                  id="exampleInputPassword1"
-                />
-              </div>
-              <div class="mb-3 form-check justify-content-around">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label modalColor" for="exampleCheck1"
-                  >Recordame</label
-                >
-                <span style="color: #2ad167">Olvidé mi contraseña</span>
-              </div>
-              <button
-                type="submit"
-                class="btn btn-primary w-100 modalColor buttonFormModal"
-              >
-                Ingresar
-              </button>
-              <p class="modalColor text-center">
-                Aún no tienes cuenta?
-                <span style="color: #2ad167">Registrarse</span>
-              </p>
-            </div>
-          </form>
-        </div>
       </header>
       <main>
         <div class="card-group d-flex row row-cols-1 row-cols-md-3 g-4">
-          <div class="cardOne align-content-center">
+          <div class="cardOne d-flex flex-wrap justify-content-center">
             <div class="bgGreen">
               <img
                 src="./Materiales/mail-icon.svg"
@@ -151,7 +156,7 @@
               </p>
             </div>
           </div>
-          <div class="cardTwo">
+          <div class="cardTwo d-flex flex-wrap justify-content-center">
             <div class="bgGreen">
               <img
                 src="./Materiales/analytics-icon.svg"
@@ -168,7 +173,7 @@
               </p>
             </div>
           </div>
-          <div class="cardThree">
+          <div class="cardThree d-flex flex-wrap justify-content-center">
             <div class="bgGreen">
               <img
                 src="./Materiales/people-icon.svg"
