@@ -13,3 +13,17 @@ btnRegistration.addEventListener("click", () => {
 btnClose.addEventListener("click", () => {
   formCont.style.display = "none";
 });
+
+
+const burgerMenu = document.getElementById("burgerMenu");
+const dropMenu = document.getElementById("navbarNavDropdown");
+const navIcon = document.getElementById("navbar-toggler-icon");
+
+burgerMenu.addEventListener("click", function () {
+  if (dropMenu.style.display === "block") {
+    dropMenu.style.display = "none";
+  } else {
+    dropMenu.style.display = "block";
+  }
+});
+
