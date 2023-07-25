@@ -77,7 +77,62 @@
       </form>
     </div>
 
-    <nav class="navbar bg-body-tertiary navbar-expand-lg">
+    <div class="modalForm" id="registerContainer">
+      <span class="close1">&times;</span>
+      <form
+        class="d-flex flex-wrap justify-content-center h-100 align-items-center"
+      >
+        <div class="pt-5">
+          <div class="mb-3">
+            <img
+              src="./Materiales/logo-blanco.png"
+              alt=""
+              class="bgGreen modalOctopus py-2 px-1 align-items-center"
+            />
+          </div>
+          <div class="mb-3">
+            <h1 class="modalColor">Registra una nueva cuenta</h1>
+            <label for="exampleInputEmail1" class="form-label modalColor"
+              >Correo</label
+            >
+            <input
+              type="email"
+              class="form-control w-100"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label modalColor"
+              >Contraseña</label
+            >
+            <input
+              type="password"
+              class="form-control w-100"
+              id="InputPassword"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label modalColor"
+              >Repita la contraseña</label
+            >
+            <input
+              type="password"
+              class="form-control w-100"
+              id="repeatInputPassword"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn w-100 modalColor buttonFormModal bgGreen mb-3"
+          >
+            Registrarse
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <nav class="navbar bg-body-tertiary navbar-expand-md">
       <div class="container-fluid">
         <img
           src="./Materiales/logo-senpai-verde-negro.svg"
@@ -113,9 +168,26 @@
               <a class="nav-link" href="#">Precios</a>
             </li>
           </ul>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <button class="btn buttonBurger" type="submit" id="btnLogin">
+              Ingresar
+            </button>
+            <button
+              class="btn buttonBurger bgGreen"
+              type="submit"
+              id="btnRegister"
+            >
+              Registrarse
+            </button>
+          </div>
         </div>
-        <button class="btn" type="submit" id="btnLogin">Ingresar</button>
-        <button class="btn bgGreen" type="submit">Registrarse</button>
+        <button class="btn pageButton" type="submit" id="btnLogin2">
+          Ingresar
+        </button>
+        <button class="btn pageButton bgGreen" type="submit" id="btnRegister2">
+          Registrarse
+        </button>
       </div>
     </nav>
 
@@ -127,7 +199,11 @@
             <h1 id="titleHeader">La plataforma para las empresas del futuro</h1>
             <p>Productos pensados para los negocios del próximo siglo</p>
             <button class="btn bgGreen" type="submit">Solicitar demo</button>
-            <button class="btn btn-outline-dark" type="submit">
+            <button
+              class="btn btn-outline-dark"
+              type="submit"
+              id="btnRegister3"
+            >
               Registrarse
             </button>
           </div>

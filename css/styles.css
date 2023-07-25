@@ -75,6 +75,7 @@
 .modalColor {
   color: white;
 }
+
 .modalPhrase {
   color: #93a1b6;
   margin-left: 50px;
@@ -83,11 +84,15 @@
   background-color: white;
   color: #2ad167;
 }
-.close {
+.close,
+.close1 {
   float: right;
   font-size: 3.5rem;
   color: white;
   padding-right: 20px;
+}
+.buttonBurger {
+  display: none;
 }
 @media (max-width: 1200px) {
   #headerImg {
@@ -115,5 +120,11 @@
   }
   #presentation {
     padding: 0;
+  }
+  .pageButton {
+    display: none;
+  }
+  .buttonBurger {
+    display: block;
   }
 }
