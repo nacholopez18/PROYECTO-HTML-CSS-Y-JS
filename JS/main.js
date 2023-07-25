@@ -49,3 +49,23 @@ btnRegistration3.addEventListener("click", () => {
 btnClose1.addEventListener("click", () => {
   registerCont.style.display = "none";
 });
+
+const InputPassword = document.getElementById("InputPassword");
+const repeatInputPassword = document.getElementById("repeatInputPassword");
+const createAccount = document.getElementById("createAccount");
+const aceptCheck = document.getElementById("aceptCheck");
+
+createAccount.addEventListener("click", () => {
+  if (InputPassword.value !== repeatInputPassword.value) {
+    alert("Las contraseñas no coinciden");
+  } else if (aceptCheck.checked === false) {
+    alert("Debes aceptar los terminos y condiciones.");
+  }
+});
+
+const btnLogin3 = document.getElementById("btnLogin3");
+
+btnLogin3.addEventListener("click", () => {
+  registerCont.style.display = "none";
+  formCont.style.display = "block";
+});

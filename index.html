@@ -92,18 +92,28 @@
           </div>
           <div class="mb-3">
             <h1 class="modalColor">Registra una nueva cuenta</h1>
-            <label for="exampleInputEmail1" class="form-label modalColor"
+            <p class="modalColor">
+              Ya tienes cuenta?
+              <button class="bgGreen" id="btnLogin3">Ingresar</button>
+            </p>
+            <label for="NameSurname" class="form-label modalColor"
+              >Nombre y Apellido</label
+            >
+            <input type="text" class="form-control w-100" id="NameSurname" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail2" class="form-label modalColor"
               >Correo</label
             >
             <input
               type="email"
               class="form-control w-100"
-              id="exampleInputEmail1"
+              id="exampleInputEmail2"
               aria-describedby="emailHelp"
             />
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label modalColor"
+            <label for="InputPassword" class="form-label modalColor"
               >Contraseña</label
             >
             <input
@@ -113,7 +123,7 @@
             />
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label modalColor"
+            <label for="repeatInputPassword" class="form-label modalColor"
               >Repita la contraseña</label
             >
             <input
@@ -122,11 +132,18 @@
               id="repeatInputPassword"
             />
           </div>
+          <span>
+            <input type="checkbox" class="form-check-input" id="aceptCheck" />
+            <label class="form-check-label modalColor" for="aceptCheck"
+              >Acepto los Terminos y condiciones</label
+            >
+          </span>
           <button
             type="submit"
             class="btn w-100 modalColor buttonFormModal bgGreen mb-3"
+            id="createAccount"
           >
-            Registrarse
+            Crear cuenta
           </button>
         </div>
       </form>
