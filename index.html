@@ -71,7 +71,9 @@
           </button>
           <p class="modalColor text-center">
             Aún no tienes cuenta?
-            <span style="color: #2ad167">Registrarse</span>
+            <span style="color: #2ad167" id="registerBtn-LogInModal"
+              >Registrarse</span
+            >
           </p>
         </div>
       </form>
@@ -121,6 +123,21 @@
               class="form-control w-100"
               id="InputPassword"
             />
+            <span class="message1" id="passwordMessage"></span>
+          </div>
+          <div
+            class="spinner-border spinner-border-sm text-success""
+            role="status"
+            id="passwordSpinner"
+          >
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div
+            class="spinner-grow spinner-grow-sm text-success"
+            role="status"
+            id="passwordSpinnerGrow"
+          >
+            <span class="visually-hidden">Loading...</span>
           </div>
           <div class="mb-3">
             <label for="repeatInputPassword" class="form-label modalColor"
@@ -265,7 +282,7 @@
                 Mide tu performance
               </h5>
               <p class="card-text-one text-center px-5">
-                Asistencia y capacitación de porimer nivel.
+                Asistencia y capacitación de primer nivel.
               </p>
             </div>
           </div>

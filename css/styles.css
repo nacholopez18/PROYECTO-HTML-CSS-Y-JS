@@ -95,6 +95,22 @@
 .buttonBurger {
   display: none;
 }
+
+#registerBtn-LogInModal{
+  cursor: pointer;
+}
+
+.message1.valid{
+  color: green;
+}
+.message1.invalid{
+  color: red;
+}
+#passwordSpinner,
+#passwordSpinnerGrow {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   #headerImg {
     position: static;
