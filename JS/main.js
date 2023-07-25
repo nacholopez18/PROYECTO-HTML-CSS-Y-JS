@@ -20,7 +20,6 @@ btnClose.addEventListener("click", () => {
 
 const burgerMenu = document.getElementById("burgerMenu");
 const dropMenu = document.getElementById("navbarNavDropdown");
-// const navIcon = document.getElementById("navbar-toggler-icon");
 
 burgerMenu.addEventListener("click", function () {
   if (dropMenu.style.display === "block") {
@@ -32,11 +31,7 @@ burgerMenu.addEventListener("click", function () {
 
 formCont.addEventListener("submit", function (event) {
   event.preventDefault();
-  if (
-    emailInp.value &&
-    passInp.value &&
-    checkInp.value
-  ) {
+  if (emailInp.value && passInp.value && checkInp.value) {
     console.group("Datos ingresados");
     console.log("Correo: " + emailInp.value);
     console.log("Contraseña: " + passInp.value);
@@ -157,5 +152,13 @@ registerCont.addEventListener("submit", function (event) {
     return;
   } else {
     alert("Debe llenar todos los campos");
+  }
+});
+
+InputPassword.addEventListener("keyup", () => {
+  {
+    alert(
+      "La contraseña debe tener una mayúscula, una minúscula, un símbolo, un número y mínimo 8 caracteres."
+    );
   }
 });

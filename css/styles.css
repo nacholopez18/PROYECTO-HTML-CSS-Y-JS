@@ -96,14 +96,17 @@
   display: none;
 }
 
-#registerBtn-LogInModal{
+#registerBtn-LogInModal {
+  cursor: pointer;
+}
+#btnLogin3 {
   cursor: pointer;
 }
 
-.message1.valid{
+.message1.valid {
   color: green;
 }
-.message1.invalid{
+.message1.invalid {
   color: red;
 }
 #passwordSpinner,
