@@ -25,7 +25,9 @@
   border: none;
   width: fit-content;
 }
-
+#presentation {
+  padding: 3rem 0;
+}
 .whitePhoto {
   -webkit-filter: invert(1);
 }
@@ -35,18 +37,22 @@
 }
 #oficiePhoto {
   top: 40px;
+  position: absolute;
+  max-height: 400px;
 }
 #sunPhoto {
-  left: 20px;
+  left: 6rem;
+  position: absolute;
 }
-
+#headerImg {
+  position: relative;
+}
 #blueSpotPhoto {
   right: -3rem;
-  top: 450px;
+  top: 380px;
+  position: absolute;
 }
-#Presentation {
-  height: 600px;
-}
+
 #secondTitle {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 2.5rem;
@@ -84,4 +90,32 @@
   font-size: 3.5rem;
   color: white;
   padding-right: 20px;
+}
+@media (max-width: 1200px) {
+  #headerImg {
+    position: static;
+  }
+  #blueSpotPhoto {
+    display: none;
+  }
+  #sunPhoto {
+    display: none;
+  }
+  #oficiePhoto {
+    position: static;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .phoneCards {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 770px) {
+  .phoneCards {
+    flex-direction: column;
+    align-items: center;
+  }
+  #presentation {
+    padding: 0;
+  }
 }
