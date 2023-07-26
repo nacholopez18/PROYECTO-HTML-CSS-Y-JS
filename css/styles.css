@@ -59,6 +59,20 @@
 .colorText {
   color: #2ad167;
 }
+.anually{
+  color: #93a1b6;
+  font-weight:500;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.prebtnRegister{
+  border-color: #93a1b6;
+}
+.pricesCards li span{
+  font-size: 14px;
+  font-weight: bold;
+  color: #2a3342af;
+}
 .modalForm {
   display: none;
   background-color: #2a3342;
