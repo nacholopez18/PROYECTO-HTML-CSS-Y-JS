@@ -86,7 +86,8 @@
   color: #2ad167;
 }
 .close,
-.close1 {
+.close1,
+.close2 {
   float: right;
   font-size: 3.5rem;
   color: white;

@@ -30,7 +30,6 @@
           <div class="mb-3">
             <h1 class="modalColor">Ingresa a tu cuenta</h1>
             <p class="modalPhrase">y empieza a conseguir resultados</p>
-
             <label for="exampleInputEmail1" class="form-label modalColor"
               >Correo</label
             >
@@ -79,7 +78,6 @@
         </div>
       </form>
     </div>
-
     <div class="modalForm" id="registerContainer">
       <span class="close1">&times;</span>
       <form
@@ -167,6 +165,42 @@
       </form>
     </div>
 
+    <div class="modalForm" id="formDemo">
+        <span class="close2">&times;</span>
+        <form
+          class="d-flex flex-wrap justify-content-center h-100 align-items-center"
+        >
+          <div class="pt-5">
+            <div class="mb-3">
+              <img
+                src="./Materiales/logo-blanco.png"
+                alt=""
+                class="bgGreen modalOctopus py-2 px-1 align-items-center"
+              />
+            </div>
+            <div class="mb-3">
+              <h1 class="modalColor">Ingresa correo electronico</h1>
+              <label for="demoEmail" class="form-label modalColor"
+                >Correo electronico</label
+              >
+              <input
+                type="email"
+                class="form-control w-100"
+                id="demoEmail"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn w-100 modalColor buttonFormModal bgGreen mb-3"
+              id="sendDemoButton"
+            >
+              Enviar demo
+            </button>
+          </div>
+        </form>
+      </div>
+
     <nav class="navbar bg-body-tertiary navbar-expand-md">
       <div class="container-fluid">
         <img
@@ -233,7 +267,7 @@
             <span class="bgGreen rounded p-1">NUEVO</span>
             <h1 id="titleHeader">La plataforma para las empresas del futuro</h1>
             <p>Productos pensados para los negocios del próximo siglo</p>
-            <button class="btn bgGreen" type="submit">Solicitar demo</button>
+            <button class="btn bgGreen btnDemo" type="submit">Solicitar demo</button>
             <button
               class="btn btn-outline-dark"
               type="submit"
@@ -408,7 +442,7 @@
                   ><span class="px-3">Hasta 10 miembros</span>
                 </li>
               </ul>
-              <button class="btn bgGreen w-100" type="submit">
+              <button class="btn bgGreen w-100 btnDemo1" type="submit">
                 Solicitar demo
               </button>
             </div>
@@ -488,7 +522,7 @@
                   <span class="px-3">Hasta 100 miembros</span>
                 </li>
               </ul>
-              <button class="btn bgGreen w-100" type="submit">
+              <button class="btn bgGreen w-100 btnDemo2" type="submit">
                 Solicitar demo
               </button>
             </div>
@@ -568,7 +602,7 @@
                   <span class="px-3">Miembros ilimitados</span>
                 </li>
               </ul>
-              <button class="btn bgGreen w-100" type="submit">
+              <button class="btn bgGreen w-100 btnDemo3" type="submit">
                 Solicitar demo
               </button>
             </div>

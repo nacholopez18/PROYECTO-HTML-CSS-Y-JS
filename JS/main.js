@@ -162,3 +162,34 @@ InputPassword.addEventListener("keyup", () => {
     );
   }
 });
+
+const formDemo = document.getElementById("formDemo");
+const btnDemo = document.querySelector(".btnDemo");
+const btnDemo1 = document.querySelector(".btnDemo1");
+const btnDemo2 = document.querySelector(".btnDemo2");
+const btnDemo3 = document.querySelector(".btnDemo3");
+const btnClose2 = document.querySelector(".close2");
+
+btnDemo.addEventListener("click", () => {
+  formDemo.style.display = "block";
+});
+btnDemo1.addEventListener("click", () => {
+  formDemo.style.display = "block";
+});
+btnDemo2.addEventListener("click", () => {
+  formDemo.style.display = "block";
+});
+btnDemo3.addEventListener("click", () => {
+  formDemo.style.display = "block";
+});
+
+btnClose2.addEventListener("click", () => {
+  formDemo.style.display = "none";
+});
+
+formDemo.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (demoEmail.value) {
+    alert("El demo fue enviado a su correo con exito.");
+  }
+});
