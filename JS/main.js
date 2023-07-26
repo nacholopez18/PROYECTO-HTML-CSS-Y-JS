@@ -66,10 +66,12 @@ const repeatInputPassword = document.getElementById("repeatInputPassword");
 const createAccount = document.getElementById("createAccount");
 const aceptCheck = document.getElementById("aceptCheck");
 
-createAccount.addEventListener("click", () => {
+createAccount.addEventListener("click", (event) => {
   if (InputPassword.value !== repeatInputPassword.value) {
+    event.preventDefault();
     alert("Las contraseñas no coinciden");
   } else if (aceptCheck.checked === false) {
+    event.preventDefault();
     alert("Debes aceptar los terminos y condiciones.");
   }
 });
@@ -138,24 +140,25 @@ InputPassword.addEventListener("input", () => {
 });
 
 registerCont.addEventListener("submit", function (event) {
-  event.preventDefault();
   if (
     namesRegister.value &&
     emailRegister.value &&
     InputPassword.value &&
     repeatInputPassword.value
-  ) {
+  ){
     console.group("Datos ingresados");
     console.log("Nombre y Apellido: " + namesRegister.value);
     console.log("Correo: " + emailRegister.value);
     console.log("Contraseña: " + InputPassword.value);
+    alert("Datos ingresados");
     return;
   } else {
+    event.preventDefault();
     alert("Debe llenar todos los campos");
   }
 });
 
-InputPassword.addEventListener("keyup", () => {
+InputPassword.addEventListener("click", () => {
   {
     alert(
       "La contraseña debe tener una mayúscula, una minúscula, un símbolo, un número y mínimo 8 caracteres."
@@ -188,7 +191,6 @@ btnClose2.addEventListener("click", () => {
 });
 
 formDemo.addEventListener("submit", (event) => {
-  event.preventDefault();
   if (demoEmail.value) {
     alert("El demo fue enviado a su correo con exito.");
   }
